@@ -13,7 +13,7 @@ const envelope = document.getElementById("envelope");
 const letter = document.getElementById("letter");
 
 // ===== DATA OBJECTIU (29 DE MAIG) =====
-const targetDate = new Date("2026-05-29T13:15:00Z");
+const targetDate = new Date(Date.UTC(2026, 4, 29, 13, 15, 0));
 
 // ===== MOSTRAR COUNTDOWN =====
 const introText = document.getElementById("introText");

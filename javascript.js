@@ -34,8 +34,8 @@ showCountdownBtn.addEventListener("click", () => {
 
 // ===== FUNCIÓ COUNTDOWN =====
 function updateCountdown() {
-    const now = new Date();
-    let diff = targetDate - now;
+    const nowUTC = new Date(Date.now() + new Date().getTimezoneOffset() * 60000);
+    let diff = targetDate - nowUTC;
 
     if (diff <= 0) {
         monthsEl.textContent = "00";

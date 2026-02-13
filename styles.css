@@ -255,6 +255,7 @@
         opacity: 0.95;
     }
 
+
     .hidden {
         display: none;
     }
@@ -341,7 +342,6 @@
     }
 
     .letter-text {
-        white-space: pre-line;
         font-size: 1.05rem;
         opacity: 0.95;
         line-height: 1.8;

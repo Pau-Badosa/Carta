@@ -355,3 +355,10 @@
         border-radius: 15px;
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
     }
+
+    .letter-text p {
+        margin-bottom: 1.2em;
+        /* controlar espai entre paràgrafs */
+        line-height: 1.8;
+        /* controlar l’alçada de línia */
+    }

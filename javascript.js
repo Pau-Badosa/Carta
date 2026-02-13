@@ -73,14 +73,22 @@ function format(value) {
 // ===== SOBRE → CARTA =====
 let opened = false;
 
+const jokeHidden = document.getElementById("jokeHidden");
+const pressEnvelopeText = document.getElementById("pressEnvelopeText");
+
 envelope.addEventListener("click", () => {
     if (opened) return;
     opened = true;
 
+    // MOSTRAR "Gracias por regalarme todas tus risas"
+    jokeHidden.classList.remove("hidden");
+
+    // AMAGAR "Pulsa el sobre"
+    pressEnvelopeText.classList.add("hidden-text");
+
     envelope.style.transform = "scale(1.2) rotate(-5deg)";
     envelope.style.opacity = "0";
 
-    // començar cors quan s'obre
     startHearts();
 
     setTimeout(() => {
